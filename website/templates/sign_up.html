@@ -1,5 +1,14 @@
 {% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
 content %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9B0SM9BG9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z9B0SM9BG9');
+</script>
 <form method="POST">
   <img src="{{ url_for('static', filename='logo-black.png') }}" alt="My Image">
   <h3 align="center">Elera Sign Up</h3>
